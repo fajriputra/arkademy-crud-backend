@@ -14,13 +14,13 @@ module.exports = {
       if (product) {
         res.send({
           status: "success",
-          message: "tambah product success",
+          message: "Berhasil membuat produk",
           data: product,
         });
       } else {
         res.send({
           status: "warning",
-          message: "tambah product gagal",
+          message: "Gagal membuat produk",
         });
       }
     } catch (error) {
@@ -35,13 +35,13 @@ module.exports = {
     if (products.length > 0) {
       res.send({
         status: "success",
-        message: "list products ditemukan",
+        message: "Produk ditemukan",
         data: products,
       });
     } else {
       res.send({
         status: "success",
-        message: "list products tidak ditemukan",
+        message: "Produk tidak ditemukan",
       });
     }
   },
@@ -50,13 +50,13 @@ module.exports = {
     if (product) {
       res.send({
         status: "success",
-        message: "single product ditemukan",
+        message: "Produk ditemukan",
         data: product,
       });
     } else {
       res.send({
         status: "warning",
-        message: "single product tidak ditemukan",
+        message: "Produk tidak ditemukan",
       });
     }
   },
@@ -77,13 +77,13 @@ module.exports = {
       if (result.ok == 1) {
         res.send({
           status: "success",
-          message: "update product success",
+          message: "Produk berhasil diupdate",
           data: result,
         });
       } else {
         res.send({
           status: "warning",
-          message: "update product gagal",
+          message: "Produk gagal diupdate",
           data: result,
         });
       }
@@ -100,13 +100,13 @@ module.exports = {
       if (result.deletedCount == 1) {
         res.send({
           status: "success",
-          message: "delete product success",
+          message: "Produk berhasil dihapus",
           data: result,
         });
       } else {
         res.send({
           status: "warning",
-          message: "delete product gagal",
+          message: "Produk gagal dihapus",
           data: result,
         });
       }
